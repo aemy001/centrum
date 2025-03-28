@@ -13,7 +13,7 @@ import SelectFormInput from '@/components/from/SelectFormInput'
 
 import Modal from 'react-bootstrap/Modal'
 
-import FlatPickrDate from '@/app/(admin)/taken/flatPickrDate'
+import FlatPickrDate from './FlatPickrDate'
 
 const initialData = [
   {
