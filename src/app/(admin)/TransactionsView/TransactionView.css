@@ -1,0 +1,283 @@
+.transaction-view {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin: 20px auto;
+}
+.transaction-view .transHeader {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #EAECF0;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.transaction-view .transHeader .actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.transaction-view .transHeader .actions .closediv {
+  border-right: 2px solid #EAECF0;
+}
+.transaction-view .transHeader .actions .close-btn, .transaction-view .transHeader .actions .action-btn {
+  padding: 12px 24px;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.transaction-view .transHeader .actions .close-btn {
+  background: #f9fafb;
+  border: 2px solid #EAECF0;
+  color: #98A2B3;
+  margin-right: 12px;
+}
+.transaction-view .transHeader .actions .action-btn {
+  background: #0081BA;
+  border: none;
+  color: white;
+}
+.transaction-view .transHeader .actions .action-btn .arrow {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(-45deg);
+}
+.transaction-view .title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #182230;
+}
+.transaction-view .content {
+  display: flex;
+  gap: 20px;
+}
+.transaction-view .content .left-section {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.transaction-view .content .info-card, .transaction-view .content .documents {
+  background: transparent;
+  padding: 15px;
+  border-radius: 10px;
+}
+.transaction-view .content .documents h3 {
+  color: #182230;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.transaction-view .content .info-card {
+  padding: 24px 12px;
+}
+.transaction-view .content .info-card h3 {
+  color: #182230;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.transaction-view .content .info-card .row {
+  display: flex;
+}
+.transaction-view .content .info-card .info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.transaction-view .content .info-card .info-item .icon {
+  color: #007bff;
+  font-size: 16px;
+}
+.transaction-view .content .info-card .info-item img {
+  height: 40px !important;
+  width: 40px !important;
+}
+.transaction-view .content .info-card .info-item .info-text {
+  display: flex;
+  flex-direction: column;
+}
+.transaction-view .content .info-card .info-item .info-text span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #475467;
+}
+.transaction-view .content .info-card .info-item .info-text p {
+  font-size: 14px;
+  color: #101828;
+  font-weight: 600;
+  margin: 0;
+}
+.transaction-view .content .info-card .info-item .status {
+  font-weight: bold;
+  color: #2d3748;
+}
+.transaction-view .content .documents .doc-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border: 1px solid #F2F4F7;
+  border-radius: 8px;
+  background: white;
+  margin-top: 10px;
+}
+.transaction-view .content .documents .doc-item .doc-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.transaction-view .content .documents .doc-item .doc-name {
+  font-size: 14px;
+  color: #475467;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.transaction-view .content .documents .doc-item img {
+  cursor: pointer;
+  height: 24px !important;
+  width: 24px !important;
+}
+.transaction-view .content .documents .doc-item .doc-name {
+  font-size: 14px;
+  color: #475467;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.transaction-view .content .documents .doc-item .doc-size {
+  font-size: 14px;
+  color: #101828;
+  font-weight: 600;
+}
+.transaction-view .content .right-section {
+  flex: 1;
+  background: #fcfcfd;
+  padding: 24px 20px;
+  border-radius: 20px;
+  border: 1px solid #EAECF0;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.transaction-view .content .right-section .product-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.transaction-view .content .right-section .product-text span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #475467;
+}
+.transaction-view .content .right-section .product-text p {
+  font-size: 14px;
+  color: #101828;
+  font-weight: 600;
+}
+.transaction-view .content .right-section .productimg {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .transaction-view .content .right-section .row {
+    flex-direction: column;
+    text-align: center;
+  }
+  .transaction-view .content .right-section .product-text {
+    text-align: center;
+  }
+}
+.transaction-view .content .right-section .productimg {
+  border-radius: 8px;
+}
+.transaction-view .content .right-section .customer-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.transaction-view .content .right-section .customer-item .icon {
+  color: #007bff;
+  font-size: 16px;
+}
+.transaction-view .content .right-section .customer-item img {
+  height: 40px !important;
+  width: 40px !important;
+}
+.transaction-view .content .right-section .customer-item .customer-text {
+  display: flex;
+  flex-direction: column;
+}
+.transaction-view .content .right-section .customer-item .customer-text span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #475467;
+}
+.transaction-view .content .right-section .customer-item .customer-text p {
+  font-size: 14px;
+  color: #101828;
+  font-weight: 600;
+  margin: 0;
+}
+.transaction-view .content .right-section .customer-item .status {
+  font-weight: bold;
+  color: #2d3748;
+}
+.transaction-view .content .right-section .tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #EAECF0;
+}
+.transaction-view .content .right-section .tabs .tab {
+  background: transparent;
+  border: none;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #667085;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.transaction-view .content .right-section .tabs .tab.active {
+  color: #0081BA;
+  border-bottom: 2px solid #0081BA;
+}
+.transaction-view .content .right-section .activity {
+  padding: 15px;
+}
+.transaction-view .content .right-section .activity .activity-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #F2F4F7;
+}
+.transaction-view .content .right-section .activity .activity-item img {
+  height: 44px !important;
+  width: 44px !important;
+}
+.transaction-view .content .right-section .activity .activity-item .text {
+  display: flex;
+  flex-direction: column;
+}
+.transaction-view .content .right-section .activity .activity-item .message {
+  font-weight: 600;
+  font-size: 20px;
+  color: #182230;
+}
+.transaction-view .content .right-section .activity .activity-item .timestamp {
+  font-size: 18px;
+  color: #98A2B3;
+  font-weight: 500;
+}/*# sourceMappingURL=TransactionView.css.map */

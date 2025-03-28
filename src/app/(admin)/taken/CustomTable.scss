@@ -1,0 +1,221 @@
+.table-container {
+  padding: 30px;
+  background: #fff !important;
+  .ant-table-thead {
+    .ant-table-cell {
+      font-weight: 700 !important;
+      font-size: 14px !important;
+      color: #182230 !important;
+    }
+  }
+  .filters2 {
+    display: flex;
+
+    .clear-btn {
+      background: transparent !important;
+      border: none !important;
+      color: #98a2b3 !important;
+      font-size: 16px !important;
+      cursor: pointer !important;
+      padding: 12px 24px;
+      outline: 0 !important;
+      box-shadow: none !important;
+      border-radius: 0px !important;
+      border-right: 2px solid #eaecf0 !important;
+      margin-right: 8px !important;
+    }
+
+    .filter-btn {
+      background: #fcfcfd;
+      border: 2px solid #eaecf0;
+      padding: 12px 24px;
+      border-radius: 40px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      color: #98a2b3;
+      font-weight: 500;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100px;
+      // height: 48px;
+      margin-right: 10px;
+    }
+  }
+
+  .table-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+      color: #182230;
+      margin: 0;
+
+      .subline {
+        font-size: 18px;
+        color: #98a2b3;
+        font-weight: 500;
+        // margin-left: 10px;
+      }
+    }
+
+    .filters {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      // width: 100%;
+
+      .filterDiv {
+        border-right: 2px solid #eaecf0;
+
+        button {
+          min-width: 120px;
+        }
+        // padding: 3px 10px;
+        // height: 40px;
+      }
+      .addNewBtn {
+        button {
+          min-width: 126px;
+        }
+      }
+
+      .filter-icon-btn {
+        background: #f9fafb;
+        border: 2px solid #eaecf0;
+        padding: 12px 24px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        color: #98a2b3;
+        font-weight: 600;
+        font-size: 16px;
+        cursor: pointer;
+        width: 60px;
+        height: 48px;
+        margin-right: 10px;
+      }
+
+      .search-input {
+        padding: 12px;
+        background: #f2f4f7;
+        border-radius: 40px;
+        width: 300px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #98a2b3;
+        outline: 0 !important;
+        border: none !important;
+        &::placeholder {
+          font-weight: 600;
+          color: #98a2b3;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .custom-table {
+    background: white;
+    border-radius: 8px;
+
+    .ant-table {
+      border-radius: 8px;
+    }
+
+    .ant-table-thead > tr > th {
+      background: #f9fafb;
+      color: #666;
+      font-size: 14px;
+      font-weight: normal;
+    }
+
+    .ant-table-tbody > tr {
+      &:hover {
+        background: #f5f7fa;
+      }
+    }
+
+    .customer-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .customer-initial {
+        background-color: #f2f4f7;
+        color: #98a2b3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 12px;
+        gap: 10px;
+        padding: 10px 15px;
+      }
+
+      .customer-name {
+        font-weight: 500;
+        font-size: 14px;
+        color: #344054;
+      }
+
+      .customer-details {
+        font-size: 12px;
+        font-weight: 400;
+        color: #667085;
+      }
+    }
+
+    .custom-tag {
+      background: #def3e6;
+      color: green;
+      border-radius: 6px;
+      border: none;
+      padding: 4px 12px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      // width: 54px;  
+    }
+    .custom-tag.cancel {
+      background: #fcdcdc; /* Light Red */
+      color: #e96767;
+    }
+
+    .more-icon {
+      cursor: pointer;
+      color: #aaa;
+      font-size: 16px;
+    }
+  }
+}
+.quote-no {
+  color: #344054;
+  font-size: 14px;
+  font-weight: 500;
+}
+.addedon {
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  .p1 {
+    color: #344054;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .p2 {
+    color: #667085;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
